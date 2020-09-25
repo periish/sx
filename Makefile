@@ -1,7 +1,6 @@
-PREFIX = /usr/local
-bindir = $(PREFIX)/bin
-datarootdir = $(PREFIX)/share
-mandir = $(datarootdir)/man
+PREFIX = /pkg/sx
+bindir = $(PREFIX)/exec
+mandir = $(PREFIX)/man
 
 install: sx sx.1
 	mkdir -p $(DESTDIR)$(bindir) $(DESTDIR)$(mandir)/man1
